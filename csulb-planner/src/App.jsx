@@ -1,3 +1,4 @@
+import { FeaturesSection } from "./components/FeaturesSection";
 import { useState, useMemo } from "react";
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -258,6 +259,8 @@ export default function App() {
   };
 
   return(
+    <>
+      <FeaturesSection />
     <div style={{fontFamily:"'IBM Plex Mono',monospace",background:"#060b15",minHeight:"100vh",color:"#b8cce4"}}>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600&family=Syne:wght@700;800&display=swap');
@@ -677,5 +680,6 @@ export default function App() {
 
       </div>
     </div>
+    </>
   );
 }
